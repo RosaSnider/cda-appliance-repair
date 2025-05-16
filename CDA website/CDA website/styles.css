@@ -1,0 +1,64 @@
+/* Custom styles for Coeur d'Alene Appliance Repair */
+
+/* Hero Section Technician Animation */
+.technician-container {
+  position: relative;
+  display: inline-block;
+}
+
+.technician-img {
+  animation: wave 2s ease-in-out infinite;
+}
+
+.toolbox-img {
+  position: absolute;
+  bottom: 5px;
+  right: -20px;
+  width: 30px;
+  animation: bounceToolbox 2s ease-in-out infinite;
+}
+
+/* Services Section Technician Animation */
+.service-technician-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.service-technician-img {
+  animation: workOnAppliance 1.5s ease-in-out infinite;
+}
+
+.appliance-img {
+  position: absolute;
+  bottom: 5px;
+  right: -20px;
+  width: 30px;
+}
+
+/* Animations */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes bounceToolbox {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes workOnAppliance {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* Additional Custom Styles */
+img[alt="Animated technician with a toolbox"],
+img[alt*="Technician working on"] {
+  transition: transform 0.3s ease;
+}
+
+img[alt="Animated technician with a toolbox"]:hover,
+img[alt*="Technician working on"]:hover {
+  transform: scale(1.05);
+}
