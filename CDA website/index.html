@@ -5,330 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coeur d’Alene Appliance Repair | Serving Hayden, Sagle, Athol & More</title>
   <meta name="description" content="Appliance repair in Coeur d’Alene, Hayden, Sagle, Athol, Spokane Valley, and surrounding areas. We fix washers, dryers, refrigerators, microwaves, dishwashers, and more. Call (509) 564-9099 for reliable service!">
-  <meta name="keywords" content="Coeur d’Alene appliance repair, Hayden appliance repair, Sagle washer repair, Athol dryer repair, Spokane Valley refrigerator repair, Post Falls microwave repair, Rathdrum dishwasher repair">
-  <meta name="author" content="Coeur d’Alene Appliance Repair">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.cdaappliancerepair.com">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <!-- Place sitemap.xml in the same folder as index.html for Netlify -->
+  <meta name="keywords" content="Coeur d’Alene appliance repair, Hayden appliance repair, Sagle washer repair, Athol dryer repair, Spokane Valley refrigerator repair, Post Falls microwave repair, technician-dryer">
   <style>
-    /* Hero Section Technician Animation */
-    .technician-container {
-      position: relative;
-      display: inline-block;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
     }
-
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #e0f7fa;
+    }
     .technician-img {
-      animation: wave 2s ease-in-out infinite;
       margin: 0 auto;
       border-radius: 0.5rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       max-width: 150px;
       height: auto;
+      animation: wave 2s ease-in-out infinite;
     }
-
-    .toolbox-img {
-      position: absolute;
-      bottom: 5px;
-      right: -20px;
-      width: 30px;
-      height: auto;
-      animation: bounceToolbox 2s ease-in-out infinite;
-      border-radius: 0.25rem;
-    }
-
-    /* Services Section Technician Animation */
-    .service-technician-container {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    .service-technician-img {
-      animation: workOnAppliance 1.5s ease-in-out infinite;
-      margin: 0 auto;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      max-width: 100px;
-      height: auto;
-    }
-
-    .appliance-img {
-      position: absolute;
-      bottom: 5px;
-      right: -20px;
-      width: 30px;
-      height: auto;
-      border-radius: 0.25rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-    }
-
-    /* Animations */
     @keyframes wave {
       0%, 100% { transform: rotate(0deg); }
       50% { transform: rotate(5deg); }
     }
-
-    @keyframes bounceToolbox {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-3px); }
+    .services {
+      padding: 40px 20px;
+      text-align: center;
     }
-
+    .service-card {
+      display: inline-block;
+      margin: 20px;
+      width: 200px;
+      vertical-align: top;
+    }
+    .appliance-img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .service-technician-img {
+      animation: workOnAppliance 1.5s ease-in-out infinite;
+      max-width: 100px;
+      height: auto;
+      margin: 0 auto 10px;
+    }
     @keyframes workOnAppliance {
       0%, 100% { transform: translateX(0); }
       50% { transform: translateX(3px); }
     }
-
-    /* Hover Effects */
-    .technician-img:hover,
-    .service-technician-img:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
+    h1, h2 {
+      color: #2c3e50;
+    }
+    p {
+      line-height: 1.6;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Coeur d’Alene Appliance Repair",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "6848 N Government Wy # 114",
-      "addressLocality": "Dalton Gardens",
-      "addressRegion": "ID",
-      "postalCode": "83815",
-      "addressCountry": "US"
-    },
-    "telephone": "(509) 564-9099",
-    "url": "https://cdaappliance.repair",
-    "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-15:00",
-    "image": "https://cdaappliance.repair/technician-character.png",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "25"
-    },
-    "sameAs": [
-      "https://g.co/kgs/tcE8y64"
-    ],
-    "serviceArea": {
-      "@type": "ServiceArea",
-      "areaServed": [
-        "Coeur d’Alene ID",
-        "Hayden ID",
-        "Sagle ID",
-        "Athol ID",
-        "Spokane Valley WA",
-        "Post Falls ID",
-        "Rathdrum ID",
-        "Spirit Lake ID",
-        "Worley ID",
-        "Kootenai County ID"
-      ]
-    }
-  }
-  </script>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-blue-600 text-white sticky top-0 z-10">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Coeur d’Alene Appliance Repair</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#home" class="hover:underline">Home</a></li>
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#services" class="hover:underline">Services</a></li>
-          <li><a href="#reviews" class="hover:underline">Reviews</a></li>
-          <li><a href="#faq" class="hover:underline">FAQ</a></li>
-          <li><a href="#blog" class="hover:underline">Blog</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body>
+  <div class="hero">
+    <h1>Welcome to Coeur d’Alene Appliance Repair</h1>
+    <p>Serving Hayden, Sagle, Athol, Spokane Valley, and more!</p>
+    <img src="technician-character.png" alt="Animated technician with a toolbox" class="technician-img">
+  </div>
 
-  <!-- Hero Section -->
-  <section id="home" class="bg-blue-100 py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-4">Fast & Reliable Appliance Repair in Coeur d’Alene and Beyond</h2>
-      <p class="text-lg mb-4">Serving Coeur d’Alene, Hayden, Sagle, Athol, Spokane Valley, and surrounding areas with trusted service. Over 10 years of experience!</p>
-      <p class="text-lg mb-2 font-semibold">Whether you’re a homeowner, a property management company, or need breakroom repairs—we’ve got you covered!</p>
-      <p class="text-lg mb-6">As a family-owned business, we’re committed to minimizing appliance downtime in an honest, budget-friendly way for homes, rental properties, and community spaces.</p>
-      <div class="technician-container mb-4">
-        <img src="technician-character.png" alt="Animated technician with a toolbox" class="technician-img">
-        <img src="toolbox.png" alt="Technician's toolbox" class="toolbox-img">
-      </div>
-      <div class="space-x-4 mt-6">
-        <a href="tel:+15095649099" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Call Now: (509) 564-9099</a>
-        <a href="#blog" class="bg-gray-200 text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-300">Troubleshooting Tips</a>
-      </div>
+  <div class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+      <img src="technician-refrigerator.png" alt="Technician working on refrigerator" class="appliance-img">
+      <img src="technician-character.png" alt="Technician working on refrigerator" class="service-technician-img">
+      <h3>Refrigerator Repair</h3>
+      <p>Expert repairs for all refrigerator issues.</p>
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="bg-white py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-8">About Us</h3>
-      <p class="text-lg mb-4">We’re a small, family-owned team at Coeur d’Alene Appliance Repair, and we know how much a broken appliance can throw off your day. From one family to another, we feel your pain—whether you’re a parent facing a laundry mountain, a grandparent trying to save that beloved ice cream stash, or the fun auntie and uncle whose home is party central!</p>
-      <p class="text-lg mb-4">We also understand the needs of property managers committed to quality units and organizations who take pride in keeping community spaces running smoothly. No matter who you are, we’re here to get your appliances back in action—fast, fair, and budget-friendly!</p>
+    <div class="service-card">
+      <img src="technician-dryer.png" alt="Technician working on washer and dryer" class="appliance-img">
+      <img src="technician-character.png" alt="Technician working on washer and dryer" class="service-technician-img">
+      <h3>Washer & Dryer Repair</h3>
+      <p>Fast and reliable washer and dryer fixes.</p>
     </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-8">Our Services Across the Region</h3>
-      <p class="text-center mb-6">We provide expert repairs in Coeur d’Alene, Hayden, Sagle, Athol, Spokane Valley, Post Falls, Rathdrum, Spirit Lake, Worley, and Kootenai County.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="service-technician-container">
-            <img src="technician-character.png" alt="Technician working on refrigerator" class="service-technician-img">
-            <img src="fridge.png" alt="Refrigerator" class="appliance-img">
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Refrigerator Repair</h4>
-          <p>Fixing leaks and cooling issues for all brands in your area.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="service-technician-container">
-            <img src="technician-character.png" alt="Technician working on washer and dryer" class="service-technician-img">
-            <img src="washer-dryer.png" alt="Washer and Dryer" class="appliance-img">
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Washer & Dryer Repair</h4>
-          <p>Fast fixes for spinning or heating problems in Coeur d’Alene and beyond.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="service-technician-container">
-            <img src="technician-character.png" alt="Technician working on microwave" class="service-technician-img">
-            <img src="microwave.png" alt="Microwave" class="appliance-img">
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Microwave Repair</h4>
-          <p>Repairing heating issues, door problems, and more across Hayden, Spokane Valley, and more.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="service-technician-container">
-            <img src="technician-character.png" alt="Technician working on dishwasher" class="service-technician-img">
-            <img src="dishwasher.png" alt="Dishwasher" class="appliance-img">
-          </div>
-          <h4 class="text-xl font-semibold mb-2">Dishwasher Repair</h4>
-          <p>Fixing leaks, drainage issues, and cleaning problems in Post Falls, Rathdrum, and beyond.</p>
-        </div>
-      </div>
+    <div class="service-card">
+      <img src="technician-microwave.png" alt="Technician working on microwave" class="appliance-img">
+      <img src="technician-character.png" alt="Technician working on microwave" class="service-technician-img">
+      <h3>Microwave Repair</h3>
+      <p>Quick solutions for microwave problems.</p>
     </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section id="reviews" class="bg-gray-200 py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <p class="italic">"Fixed my fridge in under an hour! Super friendly and affordable."</p>
-          <p class="mt-2 font-semibold">– Sarah T., Coeur d’Alene</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <p class="italic">"Best appliance repair in Hayden. Highly recommend!"</p>
-          <p class="mt-2 font-semibold">– Mike R., Hayden</p>
-        </div>
-      </div>
-      <p class="text-center mt-8"><a href="https://g.co/kgs/tcE8y64" class="text-blue-600 hover:underline">See more reviews on Google</a></p>
+    <div class="service-card">
+      <img src="technician-washer.png" alt="Technician working on dishwasher" class="appliance-img">
+      <img src="technician-character.png" alt="Technician working on dishwasher" class="service-technician-img">
+      <h3>Dishwasher Repair</h3>
+      <p>Efficient dishwasher repairs you can trust.</p>
     </div>
-  </section>
+  </div>
 
-  <!-- FAQ Section -->
-  <section id="faq" class="py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h3>
-      <div class="space-y-4">
-        <div>
-          <h4 class="text-xl font-semibold">What areas do you serve?</h4>
-          <p>We serve Coeur d’Alene, Hayden, Sagle, Athol, Spokane Valley, Post Falls, Rathdrum, Spirit Lake, Worley, and Kootenai County.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">What appliances do you repair?</h4>
-          <p>We repair refrigerators, washers, dryers, microwaves, and dishwashers in Coeur d’Alene, Hayden, and surrounding areas.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">Do you offer same-day service?</h4>
-          <p>We offer reliable appliance repair with prompt scheduling to meet your needs. Call us at (509) 564-9099 to book an appointment!</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">How can I check if my appliance has been recalled?</h4>
-          <p>You can check for recalls on your appliances using the U.S. Consumer Product Safety Commission’s recall database. Visit <a href="https://www.cpsc.gov/recalls" class="text-blue-600 hover:underline">www.cpsc.gov/recalls</a> and search by product type or brand to see if your refrigerator, washer, dryer, microwave, or dishwasher is affected.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section id="blog" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-8">Troubleshooting Tips for Your Appliances</h3>
-      <div class="space-y-4">
-        <div>
-          <h4 class="text-xl font-semibold mb-1">Refrigerator Not Cooling?</h4>
-          <p>Clean the condenser coils and ensure proper air circulation. If it’s still not cooling, call us at <a href="tel:+15095649099" class="text-blue-600 hover:underline">(509) 564-9099</a> in Coeur d’Alene or Hayden.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">Washer Not Spinning?</h4>
-          <p>Balance the load and check the lid switch. If it doesn’t spin, we can help in Spokane Valley—call <a href="tel:+15095649099" class="text-blue-600 hover:underline">(509) 564-9099</a>.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">Dryer Not Heating?</h4>
-          <p>Clear the lint filter and vent. If it’s still cold, contact us in Sagle or Athol at <a href="tel:+15095649099" class="text-blue-600 hover:underline">(509) 564-9099</a>.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">Microwave Not Heating?</h4>
-          <p>Ensure the door is closed properly and check the power setting. For repairs in Rathdrum, call <a href="tel:+15095649099" class="text-blue-600 hover:underline">(509) 564-9099</a>.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">Dishwasher Not Draining?</h4>
-          <p>Clean the drain filter and check the hose. If it’s still not draining, we’re in Worley—call <a href="tel:+15095649099" class="text-blue-600 hover:underline">(509) 564-9099</a>.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">More Troubleshooting Resources</h4>
-          <p>Visit your appliance manufacturer’s troubleshooting page for detailed guides:</p>
-          <ul class="list-disc pl-6">
-            <li><a href="https://www.geappliances.com/ge/service-and-support/troubleshooting.htm" class="text-blue-600 hover:underline">GE Appliances</a></li>
-            <li><a href="https://www.whirlpool.com/en_us/services/customer-service/troubleshooting.html" class="text-blue-600 hover:underline">Whirlpool</a></li>
-            <li><a href="https://www.samsung.com/us/support/troubleshooting/" class="text-blue-600 hover:underline">Samsung</a></li>
-            <li><a href="https://www.lg.com/us/support/help-library" class="text-blue-600 hover:underline">LG</a></li>
-            <li><a href="https://www.bosch-home.com/us/experience-bosch/customer-service/troubleshooting" class="text-blue-600 hover:underline">Bosch</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
-      <p class="text-lg mb-4">Coeur d’Alene Appliance Repair<br>6848 N Government Wy # 114, Dalton Gardens, ID 83815</p>
-      <p class="text-lg mb-4">Phone: <a href="tel:+15095649099" class="hover:underline">(509) 564-9099</a></p>
-      <p class="text-lg mb-4">Hours: Mon-Fri 8 AM-6 PM, Sat 9 AM-3 PM</p>
-      <a href="tel:+15095649099" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-200">Get a Free Quote</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto px-4 text-center">
-      <p>© 2025 Coeur d’Alene Appliance Repair. All rights reserved.</p>
-      <p>Call us at <a href="tel:+15095649099" class="hover:underline">(509) 564-9099</a></p>
-      <p>Serving Coeur d’Alene, Hayden, Sagle, Athol, Spokane Valley, and more.</p>
-      <p><a href="https://g.co/kgs/tcE8y64" class="hover:underline">Find us on Google</a></p>
-    </div>
-  </footer>
-
-  <script>
-    // Smooth scrolling for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Call us at <a href="tel:+15095649099">(509) 564-9099</a> for immediate assistance!</p>
+  </div>
 </body>
 </html>
